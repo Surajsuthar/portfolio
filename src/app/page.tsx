@@ -3,7 +3,7 @@ import Bar from "@/components/ui/Bar";
 import Project from "@/components/ui/Projects";
 import Sidebar from "@/components/ui/Sidebar";
 import FlickeringGrid from "@/components/magicui/flickering-grid";
-import Skills from "@/components/ui/Skills"
+// import Skills from "@/components/ui/Skills"
 import Tweet from "@/components/ui/Post";
 import Footer from "@/components/ui/footer"
 import Tech from "@/components/ui/Tech";
@@ -11,12 +11,9 @@ import Tech from "@/components/ui/Tech";
 export default function Home() {
   return (
     <div className="relative">
-      {/* FlickeringGrid will cover the entire background */}
       <div className="absolute inset-0 z-0">
         <FlickeringGrid />
       </div>
-
-      {/* Content will be positioned over the grid */}
       <div className="relative z-10">
         <div className="absolute m-[60px] ml-[200px]">
           <Sidebar />

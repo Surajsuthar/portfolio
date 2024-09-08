@@ -20,26 +20,27 @@ const Projects = [
     {
         title : "BLOGIFY",
         descripation : "Developed a platform for users to share insightful content, fostering a community of engaged writers andreaders.",        
+        des1 : "Implemented a serverless backend using Cloudflare Workers, gaining experience with serverless architectures and RESTful API integration.",
         link : "https://github.com/Surajsuthar/Blogify",
     },
     {
         title : "Tweeter smart contract",
-        descripation : "Developed a platform for users to share insightful content, fostering a community of engaged writers andreaders.",        
+        descripation : "I learned how smart contracts work on the blockchain. These are like small programs that run automatically and don’t need anyone to control them, making everything more secure and trustworthy",        
         link : "https://github.com/Surajsuthar/Blogify",
     },
     {
         title : "DAO smart contract",
-        descripation : "Developed a platform for users to share insightful content, fostering a community of engaged writers andreaders.",        
+        descripation : "I learned that smart contracts are the backbone of a DAO. These contracts define all the rules and processes—how members can join, propose ideas, vote, and how funds are managed. They make sure the system is fair and transparent",        
         link : "https://github.com/Surajsuthar/Blogify",
     },
     {
         title : "Queue Based on rate limite Api",
-        descripation : "Developed a platform for users to share insightful content, fostering a community of engaged writers andreaders.",        
+        descripation : "Implement a queueing system to ensure that tasks are processed according to the rate limit for each user ID.",        
         link : "https://github.com/Surajsuthar/Blogify",
     },
     {
         title : "School Distance Api",
-        descripation : "Developed a platform for users to share insightful content, fostering a community of engaged writers andreaders.",        
+        descripation : "Implement a set of APIs using Node.js, Express.js framework, and MySQL to manage school data. The system allow users to add new schools and retrieve a list of schools sorted by proximity to a user-specified location.",        
         link : "https://github.com/Surajsuthar/Blogify",
     },
 ]
@@ -60,6 +61,7 @@ export default function Project(){
                                             <div>
                                                 <p className=" text-xl">{project.title}!</p>
                                                 <p className="mt-2">{project.descripation}</p>
+                                                <p className="mt-2">{project?.des1}</p>
                                             </div>
                                             <div className=" flex gap-2 mt-2">
                                     

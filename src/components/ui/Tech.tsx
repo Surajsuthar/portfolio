@@ -18,6 +18,7 @@ import { SiPostman } from "react-icons/si";
 import { RiNextjsLine } from "react-icons/ri";
 import { FaHtml5 } from "react-icons/fa6";
 import { FaCss3Alt } from "react-icons/fa"
+import { SiRedis } from "react-icons/si";
 
 import { FaDocker } from "react-icons/fa";
 import { FaAws } from "react-icons/fa6";
@@ -53,6 +54,7 @@ export default function Tech(){
                     <SiMysql size={30} />
                     <SiPostgresql size={30} />
                     <DiMongodb size={30} />
+                    <SiRedis size={30} />
                 </AlertDescription >
             </Alert>
             <Alert className="m-2">
