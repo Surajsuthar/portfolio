@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Hero from "@/components/ui/Hero";
 import Bar from "@/components/ui/Bar";
 import Project from "@/components/ui/Projects";
@@ -7,6 +6,7 @@ import FlickeringGrid from "@/components/magicui/flickering-grid";
 import Skills from "@/components/ui/Skills"
 import Tweet from "@/components/ui/Post";
 import Footer from "@/components/ui/footer"
+import Tech from "@/components/ui/Tech";
 
 export default function Home() {
   return (
@@ -39,7 +39,7 @@ export default function Home() {
             <span className="mt-2 text-xl underline">Skills</span>
             <div className="mt-2 bg-black h-[2px]"></div>
             <section className="mt-1">
-              <Skills/>
+              <Tech/>
             </section>
             <span className="mt-2 text-xl underline">Tweets</span>
             <div className="mt-2 bg-black h-[2px]"></div>

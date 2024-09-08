@@ -10,7 +10,7 @@ const Projects = [
         title : "EVENT MANAGEMENT",
         descripation : "Designed and developed a comprehensive Event Manager application enabling users to create, update, edit,and delete events, providing seamless event management functionality.",
         link : "https://event-clow.netlify.app/",
-        imgLink : "./img.png"
+        imgLink : "./pro1.png"
     },
     {
         title : "URL SHORTENER",
@@ -56,17 +56,17 @@ export default function Project(){
                                     <div className="flex justify-start gap-2 mt-1.5">
                                             <a href={project.link} className=" cursor-pointer" target="_blank"><Link className="h-4 w-4"/></a>
                                         </div>
-                                        <div>
-                                            <p className=" text-xl underline">{project.title}!</p>
-                                            <p className="mt-2">{project.descripation}</p>
+                                        <div className=" flex flex-col justify-between">
+                                            <div>
+                                                <p className=" text-xl">{project.title}!</p>
+                                                <p className="mt-2">{project.descripation}</p>
+                                            </div>
                                             <div className=" flex gap-2 mt-2">
-                                                <FaReact size={24}/>
-                                                <SiTypescript size={24}/>
-                                                <FaNodeJs size={24}/>
+                                    
                                             </div>
                                         </div>
                                         <div>
-                                            {project.imgLink ? <img src={project.imgLink}/> : ""}
+                                            {project.imgLink ? <img src={project.imgLink} width={1150} /> : ""}
                                         </div>
                                 </div>
                             </div>
