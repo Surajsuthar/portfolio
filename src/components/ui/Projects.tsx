@@ -59,7 +59,7 @@ export default function Project(){
                                         </div>
                                         <div className=" flex flex-col justify-between">
                                             <div>
-                                                <p className=" text-xl">{project.title}!</p>
+                                                <p className=" text-xl font-semibold">{project.title}!</p>
                                                 <p className="mt-2">{project.descripation}</p>
                                                 <p className="mt-2">{project?.des1}</p>
                                             </div>

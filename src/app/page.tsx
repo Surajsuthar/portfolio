@@ -7,6 +7,7 @@ import FlickeringGrid from "@/components/magicui/flickering-grid";
 import Tweet from "@/components/ui/Post";
 import Footer from "@/components/ui/footer"
 import Tech from "@/components/ui/Tech";
+import Line from "@/components/ui/line";
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
           <Sidebar />
         </div>
 
-        <main className="flex justify-center m-auto mt-3 space-y-3 font-space-mono font-semibold ">
+        <main className="flex justify-center m-auto mt-3 space-y-3 font-space-mono ">
           <div className="flex flex-col max-w-[850px] gap-2 p-2">
             <section className="pt-8">
               <Hero />
@@ -29,16 +30,16 @@ export default function Home() {
               <Bar />
             </section>
             <div className="mt-2 bg-black h-[2px]"></div>
-            <span className="mt-2 text-xl underline">Project</span>
+            <Line text="Project"/>
             <section className="mt-1">
               <Project />
             </section>
-            <span className="mt-2 text-xl underline">Skills</span>
+            <Line text="Sills"/>
             <div className="mt-2 bg-black h-[2px]"></div>
             <section className="mt-1">
               <Tech/>
             </section>
-            <span className="mt-2 text-xl underline">Tweets</span>
+            <Line text="Tweet"/>
             <div className="mt-2 bg-black h-[2px]"></div>
             <section className="mt-1">
               <Tweet/>
