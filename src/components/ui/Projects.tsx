@@ -1,9 +1,4 @@
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
-import { px } from "framer-motion";
 import { Link } from 'lucide-react';
-import { FaReact } from "react-icons/fa";
-import { SiTypescript } from "react-icons/si";
-import { FaNodeJs } from "react-icons/fa6";
 
 const Projects = [
     {

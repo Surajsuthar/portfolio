@@ -23,7 +23,7 @@ export default function Hero(){
                 </p>
                 <span onClick={handleCopy} className=' mt-2 flex gap-1 hover:cursor-pointer hover:underline'><Mail/>{email}</span>
             </div>
-            <img src="/img.png"  className=" rounded-full h-[210px] w-[210px]"/>
+            <img src="/img.png" alt='Not found'   className=" rounded-full h-[210px] w-[210px]"/>
         </div>
     )
 }
