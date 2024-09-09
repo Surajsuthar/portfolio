@@ -32,7 +32,7 @@ export default function Home() {
             <div className="mt-2 bg-black h-[2px]"></div>
             <Line text="Project"/>
             <section className="mt-1">
-              <Project />
+              <Project/>
             </section>
             <Line text="Sills"/>
             <div className="mt-2 bg-black h-[2px]"></div>

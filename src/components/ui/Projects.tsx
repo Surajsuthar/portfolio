@@ -1,11 +1,12 @@
 import { Link } from 'lucide-react';
+import Image from 'next/image';
 
 const Projects = [
     {
         title : "EVENT MANAGEMENT",
         descripation : "Designed and developed a comprehensive Event Manager application enabling users to create, update, edit,and delete events, providing seamless event management functionality.",
         link : "https://event-clow.netlify.app/",
-        imgLink : "./pro1.png"
+        imgLink : "/pro1.png"
     },
     {
         title : "URL SHORTENER",
@@ -45,9 +46,9 @@ export default function Project(){
         <div className="flex flex-col justify-center">
             <div className=" flex-1  justify-evenly gap-2 mt-2">
                 {
-                    Projects.map((project) => {
+                    Projects.map((project,id) => {
                         return(
-                            <div className="flex flex-col border-black border-[1px] p-2 mt-2">
+                            <div key={id} className="flex flex-col border-black border-[1px] p-2 mt-2">
                                 <div className="flex flex-row gap-2">
                                     <div className="flex justify-start gap-2 mt-1.5">
                                             <a href={project.link} className=" cursor-pointer" target="_blank"><Link className="h-4 w-4"/></a>
@@ -63,7 +64,7 @@ export default function Project(){
                                             </div>
                                         </div>
                                         <div>
-                                            {project.imgLink ? <img src={project.imgLink} width={1150} /> : ""}
+                                            {project.imgLink ? <Image alt='not found' src={project.imgLink} height={500} width={1150} /> : ""}
                                         </div>
                                 </div>
                             </div>

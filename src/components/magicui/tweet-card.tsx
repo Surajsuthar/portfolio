@@ -211,12 +211,13 @@ export const TweetMedia = ({ tweet }: { tweet: EnrichedTweet }) => (
     )}
     {!tweet.video &&
       !tweet.photos &&
-      // @ts-ignore
+      // @ts-expect-error koi bat nhi
       tweet?.card?.binding_values?.thumbnail_image_large?.image_value.url && (
         <img
-          // @ts-ignore
+          // @ts-expect-error koi bat nhi
           src={tweet.card.binding_values.thumbnail_image_large.image_value.url}
           className="h-64 rounded-xl border object-cover shadow-sm"
+          alt="nothing"
         />
       )}
   </div>
