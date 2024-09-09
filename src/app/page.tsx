@@ -11,9 +11,9 @@ import Line from "@/components/ui/line";
 
 export default function Home() {
   return (
-    <div className="relative">
+    <div className="relative min-h-screen">
       {/* Flickering Grid Background */}
-      <div className="absolute inset-0 z-0">
+      <div className=" fixed inset-0 z-0">
         <FlickeringGrid />
       </div>
       
