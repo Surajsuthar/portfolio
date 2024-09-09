@@ -5,48 +5,65 @@ import Sidebar from "@/components/ui/Sidebar";
 import FlickeringGrid from "@/components/magicui/flickering-grid";
 // import Skills from "@/components/ui/Skills"
 import Tweet from "@/components/ui/Post";
-import Footer from "@/components/ui/footer"
+import Footer from "@/components/ui/footer";
 import Tech from "@/components/ui/Tech";
 import Line from "@/components/ui/line";
 
 export default function Home() {
   return (
     <div className="relative">
+      {/* Flickering Grid Background */}
       <div className="absolute inset-0 z-0">
         <FlickeringGrid />
       </div>
+      
+      {/* Main Content */}
       <div className="relative z-10">
-        <div className="absolute m-[60px] ml-[200px]">
-          <Sidebar />
+        {/* Sidebar - hidden on small screens, visible on large screens */}
+        <div className="absolute top-0 left-0 m-4 md:m-[60px] md:ml-[200px] hidden md:block">
+          
         </div>
 
-        <main className="flex justify-center m-auto mt-3 space-y-3 font-space-mono ">
-          <div className="flex flex-col max-w-[850px] gap-2 p-2">
+        <main className="flex justify-center mx-auto mt-3 space-y-3 font-space-mono">
+          <div className="flex flex-col max-w-[850px] gap-4 p-4 md:p-2 w-full">
+            {/* Hero Section */}
             <section className="pt-8">
               <Hero />
             </section>
-            <div className="mt-2 bg-black h-[2px]"></div>
+
+            {/* Horizontal Divider */}
+            <div className="mt-2 bg-black h-[2px]" />
+
+            {/* Bar Section */}
             <section className="mt-1">
               <Bar />
             </section>
-            <div className="mt-2 bg-black h-[2px]"></div>
-            <Line text="Project"/>
+
+            {/* Divider and Project Section */}
+            <div className="mt-2 bg-black h-[2px]" />
+            <Line text="Project" />
             <section className="mt-1">
-              <Project/>
+              <Project />
             </section>
-            <Line text="Sills"/>
-            <div className="mt-2 bg-black h-[2px]"></div>
+
+            {/* Divider and Skills/Tech Section */}
+            <Line text="Skills" />
+            <div className="mt-2 bg-black h-[2px]" />
             <section className="mt-1">
-              <Tech/>
+              <Tech />
             </section>
-            <Line text="Tweet"/>
-            <div className="mt-2 bg-black h-[2px]"></div>
+
+            {/* Divider and Tweet Section */}
+            <Line text="Tweet" />
+            <div className="mt-2 bg-black h-[2px]" />
             <section className="mt-1">
-              <Tweet/>
+              <Tweet />
             </section>
-            <div className="mt-2 bg-black h-[2px]"></div>
+
+            {/* Footer Section */}
+            <div className="mt-2 bg-black h-[2px]" />
             <section className="mt-1">
-              <Footer/>
+              <Footer />
             </section>
           </div>
         </main>
