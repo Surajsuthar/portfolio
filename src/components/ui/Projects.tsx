@@ -3,42 +3,30 @@ import Image from 'next/image';
 
 const Projects = [
     {
+        title : "Dev Notify",
+        descripation : "DevNotify is a web application that helps developers stay updated on issues from their starred GitHub repositories.",       
+        link : "https://devnotify.in",
+    },
+    {
+        title : "Record-me",
+        descripation : "Developed a platform for users to share insightful content, fostering a community of engaged writers andreaders.",        
+        link : "https://github.com/Surajsuthar/record-me",
+    },
+    {
+        title : "Handle-it",
+        descripation : "An AI-powered content creation platform that helps you generate engaging posts and automatically publishes them across your connected social media accounts — all in one place.",        
+        link : "https://github.com/Surajsuthar/handle-it",
+    },
+    {
+        title : "Appoint",
+        descripation : "A next-generation appointment booking system designed for speed, flexibility, and automation — offering real-time scheduling, smart reminders, calendar integration, and seamless client experiences across web and mobile.",        
+        link : "https://github.com/Surajsuthar/appoint",
+    },
+    {
         title : "EVENT MANAGEMENT",
         descripation : "Designed and developed a comprehensive Event Manager application enabling users to create, update, edit,and delete events, providing seamless event management functionality.",
         link : "https://event-clow.netlify.app/",
-        imgLink : "/pro1.png"
-    },
-    {
-        title : "URL SHORTENER",
-        descripation : "Developed a basic URL shortener application to convert long URLs into short, easily shareable links.",       
-        link : "",
-    },
-    {
-        title : "BLOGIFY",
-        descripation : "Developed a platform for users to share insightful content, fostering a community of engaged writers andreaders.",        
-        des1 : "Implemented a serverless backend using Cloudflare Workers, gaining experience with serverless architectures and RESTful API integration.",
-        link : "https://github.com/Surajsuthar/Blogify",
-    },
-    {
-        title : "Tweeter smart contract",
-        descripation : "I learned how smart contracts work on the blockchain. These are like small programs that run automatically and don’t need anyone to control them, making everything more secure and trustworthy",        
-        link : "https://github.com/Surajsuthar/Twitter_smart-contact.git",
-    },
-    {
-        title : "DAO smart contract",
-        descripation : "I learned that smart contracts are the backbone of a DAO. These contracts define all the rules and processes—how members can join, propose ideas, vote, and how funds are managed. They make sure the system is fair and transparent",        
-        link : "https://github.com/Surajsuthar/Decentralized-Autonomous-Organization.git",
-    },
-    {
-        title : "Queue Based on rate limite Api",
-        descripation : "Implement a queueing system to ensure that tasks are processed according to the rate limit for each user ID.",        
-        link : "https://github.com/Surajsuthar/user-task-queueing-rate-limit.git",
-    },
-    {
-        title : "School Distance Api",
-        descripation : "Implement a set of APIs using Node.js, Express.js framework, and MySQL to manage school data. The system allow users to add new schools and retrieve a list of schools sorted by proximity to a user-specified location.",        
-        link : "https://github.com/Surajsuthar/School-details-api.git",
-    },
+    }
 ]
 
 export default function Project(){
@@ -57,14 +45,10 @@ export default function Project(){
                                             <div>
                                                 <p className=" text-xl font-semibold">{project.title}!</p>
                                                 <p className="mt-2">{project.descripation}</p>
-                                                <p className="mt-2">{project?.des1}</p>
                                             </div>
                                             <div className=" flex gap-2 mt-2">
                                     
                                             </div>
-                                        </div>
-                                        <div>
-                                            {project.imgLink ? <Image alt='not found' src={project.imgLink} height={500} width={1150} /> : ""}
                                         </div>
                                 </div>
                             </div>

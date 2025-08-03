@@ -7,6 +7,7 @@ import Tweet from "@/components/ui/Post";
 import Footer from "@/components/ui/footer";
 import Tech from "@/components/ui/Tech";
 import Line from "@/components/ui/line";
+import { Exprience } from "@/components/ui/exprience";
 
 export default function Home() {
   return (
@@ -19,16 +20,16 @@ export default function Home() {
             <section className="pt-8">
               <Hero />
             </section>
-
+            <Line text="Exprience" />
             <div className="mt-2 bg-black h-[2px]" />
-
             <section className="mt-1">
-              <Bar />
+              <Exprience/>
             </section>
 
-            <div className="mt-2 bg-black h-[2px]" />
+            
             <Line text="Project" />
             <section className="mt-1">
+            <div className="mt-2 bg-black h-[2px]" />
               <Project />
             </section>
 
@@ -37,13 +38,6 @@ export default function Home() {
             <section className="mt-1">
               <Tech />
             </section>
-
-            {/* <Line text="Tweet" />
-            <div className="mt-2 bg-black h-[2px]" /> */}
-            {/* <section className="mt-1">
-              <Tweet />
-            </section> */}
-
             <div className="mt-2 bg-black h-[2px]" />
             <section className="mt-1">
               <Footer />

@@ -19,8 +19,8 @@ export default function Hero(){
     return (
         <div className=" flex flex-row gap-2 ">
             <div className=" flex flex-col flex-wrap gap-1">
-                <div className="text-[60px] font-black">I{"'"}m Suraj</div>
-                <div className=' text-xl'> Aspiring software engineer</div>
+                <div className="text-[60px] font-black">Hey👋, I{"'"}m Suraj</div>
+                <div className=' text-xl'> software engineer</div>
                 <p className='mt-2 text-l'>
                 Enthusiastic and detail-oriented fresher with a basic understanding of backend development and a keen interest in Web3 and blockchain technologies. Looking to apply skills in Node.js, databases, and blockchain frameworks to contribute to projects and learn from experienced teams. Seeking opportunities to grow knowledge and work on creative solutions in the field of decentralized systems
                 </p>
