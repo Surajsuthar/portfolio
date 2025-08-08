@@ -22,7 +22,7 @@ export default function Hero(){
                 <div className="text-[60px] font-black">Hey👋, I{"'"}m Suraj</div>
                 <div className=' text-xl'> software engineer</div>
                 <p className='mt-2 text-l'>
-                Enthusiastic and detail-oriented fresher with a basic understanding of backend development and a keen interest in Web3 and blockchain technologies. Looking to apply skills in Node.js, databases, and blockchain frameworks to contribute to projects and learn from experienced teams. Seeking opportunities to grow knowledge and work on creative solutions in the field of decentralized systems
+                I'm Surajmal Suthar — an enthusiastic and detail-oriented fullstack developer with 8 months of hands-on experience in building scalable real-world systems. With a strong foundation in Node.js, databases, and API design, I'm eager to contribute to impactful projects, learn from experienced teams, and build creative, high-performance solutions.
                 </p>
                 <div className='flex gap-5 mt-2'>
                     <span onClick={handleCopy} className=' mt-2 hover:cursor-pointer '>

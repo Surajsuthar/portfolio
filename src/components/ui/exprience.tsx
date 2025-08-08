@@ -10,7 +10,7 @@ export const Exprience = () => {
                 </span>
             </div>
             <div className="text-left">
-                nodejs developer
+                Backend Developer
             </div>
             <div className=" text-sm">
             Designing, developing, and maintaining RESTful APIs to support web applications.

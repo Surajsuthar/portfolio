@@ -23,9 +23,9 @@ const Projects = [
         link : "https://github.com/Surajsuthar/appoint",
     },
     {
-        title : "EVENT MANAGEMENT",
-        descripation : "Designed and developed a comprehensive Event Manager application enabling users to create, update, edit,and delete events, providing seamless event management functionality.",
-        link : "https://event-clow.netlify.app/",
+        title : "Passion Farms (freelence)",
+        descripation : "Passion Farms is a modern e-commerce platform built for a rapidly growing cannabis brand aiming to streamline online sales and enhance customer experience. The platform enables users to browse a variety of cannabis products, view real-time inventory, and place secure orders with seamless checkout.",
+        link : "https://beta.passionfarms.org",
     }
 ]
 
