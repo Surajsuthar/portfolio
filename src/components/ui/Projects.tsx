@@ -1,77 +1,99 @@
-import { Link } from 'lucide-react';
-import Image from 'next/image';
+import { ExternalLink, Github } from 'lucide-react';
 
-const Projects = [
+const projects = [
     {
-        title : "Dev Notify",
-        descripation : "DevNotify is a web application that helps developers stay updated on issues from their starred GitHub repositories.",       
-        link : "https://devnotify.in",
+        id: 1,
+        title: "Dev Notify",
+        description: "Web application that helps developers stay updated on issues from their starred GitHub repositories.",
+        link: "https://devnotify.in",
+        github: "https://github.com/Surajsuthar/dev-notify",
+        tech: ["Next.js", "TypeScript", "GitHub API", "Tailwind CSS"]
     },
     {
-        title : "Record-me",
-        descripation : "Developed a platform for users to share insightful content, fostering a community of engaged writers andreaders.",        
-        link : "https://github.com/Surajsuthar/record-me",
+        id: 2,
+        title: "Passion Farms",
+        description: "Modern e-commerce platform for a cannabis brand with real-time inventory and secure checkout.",
+        link: "https://beta.passionfarms.org",
+        github: null,
+        tag: "freelance",
+        tech: ["Next.js", "Node.js", "MongoDB", "Stripe"]
     },
     {
-        title : "Handle-it",
-        descripation : "An AI-powered content creation platform that helps you generate engaging posts and automatically publishes them across your connected social media accounts — all in one place.",        
-        link : "https://github.com/Surajsuthar/handle-it",
+        id: 3,
+        title: "Handle-it",
+        description: "AI-powered content creation platform that generates posts and publishes them across social media accounts.",
+        link: null,
+        github: "https://github.com/Surajsuthar/handle-it",
+        tech: ["Next.js", "OpenAI", "Node.js", "PostgreSQL"]
     },
     {
-        title : "Appoint",
-        descripation : "A next-generation appointment booking system designed for speed, flexibility, and automation — offering real-time scheduling, smart reminders, calendar integration, and seamless client experiences across web and mobile.",        
-        link : "https://github.com/Surajsuthar/appoint",
+        id: 4,
+        title: "Appoint",
+        description: "Appointment booking system with real-time scheduling, smart reminders, and calendar integration.",
+        link: null,
+        github: "https://github.com/Surajsuthar/appoint",
+        tech: ["React", "Node.js", "MongoDB", "Socket.io"]
     },
     {
-        title : "Passion Farms (freelence)",
-        descripation : "Passion Farms is a modern e-commerce platform built for a rapidly growing cannabis brand aiming to streamline online sales and enhance customer experience. The platform enables users to browse a variety of cannabis products, view real-time inventory, and place secure orders with seamless checkout.",
-        link : "https://beta.passionfarms.org",
-    }
+        id: 5,
+        title: "Record-me",
+        description: "Platform for users to share insightful content, fostering a community of engaged writers and readers.",
+        link: null,
+        github: "https://github.com/Surajsuthar/record-me",
+        tech: ["React", "Express", "MongoDB", "JWT"]
+    },
 ]
 
-export default function Project(){
+export default function Projects() {
     return (
-        <div className="flex flex-col justify-center">
-            <div className=" flex-1  justify-evenly gap-2 mt-2">
-                {
-                    Projects.map((project,id) => {
-                        return(
-                            <div key={id} className="flex flex-col border-black border-[1px] p-2 mt-2">
-                                <div className="flex flex-row gap-2">
-                                    <div className="flex justify-start gap-2 mt-1.5">
-                                            <a href={project.link} className=" cursor-pointer" target="_blank"><Link className="h-4 w-4"/></a>
-                                        </div>
-                                        <div className=" flex flex-col justify-between">
-                                            <div>
-                                                <p className=" text-xl font-semibold">{project.title}!</p>
-                                                <p className="mt-2">{project.descripation}</p>
-                                            </div>
-                                            <div className=" flex gap-2 mt-2">
-                                    
-                                            </div>
-                                        </div>
-                                </div>
-                            </div>
-                        )
-                    })
-                }
-                {/* {
-                    Projects.map((project) =>{
-                        return (
-                            <Alert className="m-2 border-[1px] border-black">
-                                <Link className="h-4 w-4 cursor-pointer"/>
-                                <AlertTitle className="font-bold underline">{project.title}!</AlertTitle>
-                                <AlertDescription className="mt-4">
-                                    {project.descripation}
-                                </AlertDescription>
-                                <AlertDescription>
-                                You can add components and dependencies to your app using the cli. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus magnam, dolore quia, modi ad dolorum, tenetur eligendi maxime ipsam perferendis est. Nisi eum dolore numquam fugit, optio culpa perferendis eius?
-                                </AlertDescription>
-                            </Alert>
-                        )
-                    })
-                } */}
-            </div>
+        <div className="flex flex-col gap-2">
+            {projects.map((project) => (
+                <div
+                    key={project.id}
+                    className="group p-4 -mx-4 rounded-lg hover:bg-muted/50 transition-all duration-200 hover:translate-x-1"
+                >
+                    <div className="flex items-start justify-between gap-2">
+                        <div className="flex items-center gap-2">
+                            <h3 className="font-semibold">{project.title}</h3>
+                            {project.tag && (
+                                <span className="text-xs px-2 py-0.5 bg-muted rounded-md text-muted-foreground">
+                                    {project.tag}
+                                </span>
+                            )}
+                        </div>
+                        <div className="flex items-center gap-2">
+                            {project.github && (
+                                <a
+                                    href={project.github}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-muted-foreground hover:text-foreground transition-colors"
+                                    aria-label="View on GitHub"
+                                >
+                                    <Github className="h-4 w-4" />
+                                </a>
+                            )}
+                            {project.link && (
+                                <a
+                                    href={project.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-muted-foreground hover:text-foreground transition-colors"
+                                    aria-label="View live demo"
+                                >
+                                    <ExternalLink className="h-4 w-4" />
+                                </a>
+                            )}
+                        </div>
+                    </div>
+                    <p className="mt-1 text-sm text-muted-foreground">
+                        {project.description}
+                    </p>
+                    <p className="mt-2 text-xs text-muted-foreground">
+                        {project.tech.join(" / ")}
+                    </p>
+                </div>
+            ))}
         </div>
     )
 }
