@@ -1,9 +1,7 @@
-export default function Footer(){
+export default function Footer() {
     return (
-        <div className="flex justify-center">
-            <p>
-                Thanks for visiting
-            </p>
-        </div>
+        <footer className="py-8 text-sm text-muted-foreground">
+            {/* <p>suraj.dev</p> */}
+        </footer>
     )
 }

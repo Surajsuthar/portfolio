@@ -1,50 +1,21 @@
 import Hero from "@/components/ui/Hero";
-import Bar from "@/components/ui/Bar";
-import Project from "@/components/ui/Projects";
-import Sidebar from "@/components/ui/Sidebar";
-import FlickeringGrid from "@/components/magicui/flickering-grid";
-import Tweet from "@/components/ui/Post";
 import Footer from "@/components/ui/footer";
-import Tech from "@/components/ui/Tech";
-import Line from "@/components/ui/line";
-import { Exprience } from "@/components/ui/exprience";
+import { TabsSection } from "@/components/ui/TabsSection";
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen">
-      <div className="relative z-10">
-        <div className="absolute top-0 left-0 m-4 md:m-[60px] md:ml-[200px] hidden md:block"></div>
-
-        <main className="flex justify-center mx-auto mt-3 space-y-3 font-space-mono">
-          <div className="flex flex-col max-w-[850px] gap-4 p-4 md:p-2 w-full">
-            <section className="pt-8">
-              <Hero />
-            </section>
-            <Line text="Exprience" />
-            <div className="mt-2 bg-black h-[2px]" />
-            <section className="mt-1">
-              <Exprience/>
-            </section>
-
-            
-            <Line text="Project" />
-            <section className="mt-1">
-            <div className="mt-2 bg-black h-[2px]" />
-              <Project />
-            </section>
-
-            <Line text="Skills" />
-            <div className="mt-2 bg-black h-[2px]" />
-            <section className="mt-1">
-              <Tech />
-            </section>
-            <div className="mt-2 bg-black h-[2px]" />
-            <section className="mt-1">
-              <Footer />
-            </section>
-          </div>
-        </main>
+    <main className="min-h-screen flex flex-col">
+      <div className="flex-1 w-full max-w-[650px] mx-auto px-6 pt-6 md:pt-10 pb-12">
+        <section className="mb-12">
+          <Hero />
+        </section>
+        <section>
+          <TabsSection />
+        </section>
       </div>
-    </div>
+      <div className="w-full max-w-[650px] mx-auto px-6">
+        <Footer />
+      </div>
+    </main>
   );
 }

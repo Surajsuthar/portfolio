@@ -1,38 +1,64 @@
 "use client"
-import { Mail } from 'lucide-react';
+import { Mail, Github, Linkedin, Twitter, Download } from 'lucide-react';
 import { toast } from "sonner"
-import Image from 'next/image';
-import Sidebar from "./Sidebar"
 
-export default function Hero(){
-
+export default function Hero() {
     const email = 'surajsuthar0067@gmail.com';
 
     const handleCopy = () => {
         navigator.clipboard.writeText(email).then(() => {
-            toast("Email copied !")
+            toast("Email copied!")
         }).catch((err) => {
-          console.error('Failed to copy text: ', err);
+            console.error('Failed to copy text: ', err);
         });
     };
 
     return (
-        <div className=" flex flex-row gap-2 ">
-            <div className=" flex flex-col flex-wrap gap-1">
-                <div className="text-[60px] font-black">Hey👋, I{"'"}m Suraj</div>
-                <div className=' text-xl'> software engineer</div>
-                <p className='mt-2 text-l'>
-                I'm Surajmal Suthar — an enthusiastic and detail-oriented fullstack developer with 8 months of hands-on experience in building scalable real-world systems. With a strong foundation in Node.js, databases, and API design, I'm eager to contribute to impactful projects, learn from experienced teams, and build creative, high-performance solutions.
-                </p>
-                <div className='flex gap-5 mt-2'>
-                    <span onClick={handleCopy} className=' mt-2 hover:cursor-pointer '>
-                        <Mail/>    
-                    </span>
-                    <Sidebar/>
-                    
-                </div>
+        <div className="flex flex-col gap-4">
+            <h1 className="text-4xl md:text-5xl font-bold">Hey, I'm Suraj</h1>
+            <p className="text-muted-foreground">
+                Fullstack developer building scalable systems with Node.js & modern web technologies.
+            </p>
+            <div className="flex items-center gap-4">
+                <button
+                    onClick={handleCopy}
+                    className="hover:text-muted-foreground transition-colors"
+                    aria-label="Copy email"
+                >
+                    <Mail className="h-5 w-5" />
+                </button>
+                <a
+                    href="https://github.com/Surajsuthar"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-muted-foreground transition-colors"
+                >
+                    <Github className="h-5 w-5" />
+                </a>
+                <a
+                    href="https://www.linkedin.com/in/surajmal-suthar-26a297203/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-muted-foreground transition-colors"
+                >
+                    <Linkedin className="h-5 w-5" />
+                </a>
+                <a
+                    href="https://x.com/Suraj__0067"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-muted-foreground transition-colors"
+                >
+                    <Twitter className="h-5 w-5" />
+                </a>
+                <a
+                    href="/SURAJMAL_SUTHAR_RESUME.pdf"
+                    download
+                    className="hover:text-muted-foreground transition-colors"
+                >
+                    <Download className="h-5 w-5" />
+                </a>
             </div>
-            <Image src="/img.png" alt='Not found'  width={210} height={210}  className=" rounded-full h-[210px] w-[210px]"/>
         </div>
     )
 }
