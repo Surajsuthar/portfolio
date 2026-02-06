@@ -17,11 +17,12 @@ export default function Hero() {
         <div className="flex flex-col gap-4">
             <h1 className="text-4xl md:text-5xl font-bold">Hey, I'm Suraj</h1>
             <p className="text-muted-foreground">
-                Fullstack developer building scalable systems with Node.js & modern web technologies.
+                Fullstack developer building scalable systems with Node.js & modern web technologies with 1.2+ years of experience.
             </p>
             <div className="flex items-center gap-4">
                 <button
                     onClick={handleCopy}
+                    type="button"
                     className="hover:text-muted-foreground transition-colors"
                     aria-label="Copy email"
                 >

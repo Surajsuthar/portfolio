@@ -5,7 +5,7 @@ const experiences = [
         company: "Roboto Studio",
         type: "Remote (London)",
         period: "September 2025 - Present",
-        description: "Designed and maintained RESTful APIs for scalable web applications. Worked with MongoDB and SQL databases for efficient data management. Integrated third-party APIs to expand application capabilities.",
+        description: "I worked extensively with Sanity CMS to develop a programmatic headless CMS. My role involved designing content models, creating custom schemas, writing GROQ queries, and building backend integrations that powered dynamic and scalable applications. Focused on performance, clean architecture, and developer-friendly CMS workflows.",
         tech: ["Next.js", "Sanity", "CMS", "REST APIs", "PostgreSQL", "VERCEL"]
     },
     {
