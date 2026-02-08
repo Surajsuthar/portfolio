@@ -17,7 +17,7 @@ export default function Hero() {
         <div className="flex flex-col gap-4">
             <h1 className="text-4xl md:text-5xl font-bold">Hey, I'm Suraj</h1>
             <p className="text-muted-foreground">
-                Fullstack developer building scalable systems with Node.js & modern web technologies with 1.2+ years of experience.
+            Builder focused on shipping scalable, production-ready systems. 1.2+ years of hands-on experience.
             </p>
             <div className="flex items-center gap-4">
                 <button
@@ -51,13 +51,6 @@ export default function Hero() {
                     className="hover:text-muted-foreground transition-colors"
                 >
                     <Twitter className="h-5 w-5" />
-                </a>
-                <a
-                    href="/SURAJMAL_SUTHAR_RESUME.pdf"
-                    download
-                    className="hover:text-muted-foreground transition-colors"
-                >
-                    <Download className="h-5 w-5" />
                 </a>
             </div>
         </div>
