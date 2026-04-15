@@ -15,7 +15,7 @@ const geistMono = localFont({
 	weight: "100 900",
 });
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://itssuraj.dev";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://surajsuthar.in";
 
 export const metadata: Metadata = {
 	metadataBase: new URL(SITE_URL),
