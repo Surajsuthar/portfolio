@@ -12,11 +12,27 @@ const projects = [
     {
         id: 2,
         title: "Passion Farms",
-        description: "Modern e-commerce platform for a cannabis brand with real-time inventory and secure checkout.",
+        description: "Built a scalable full-stack e-commerce platform with real-time inventory tracking and secure payment integration using Stripe. Designed and implemented REST APIs, optimized database queries for product and order management, and delivered a responsive, high-performance user experience using Next.js.",
         link: "https://beta.passionfarms.org",
         github: null,
         tag: "freelance",
         tech: ["Next.js", "Node.js", "MongoDB", "Stripe"]
+    },
+    {
+      id: 5,
+      title: "Video Transcoder",
+      description: "Build a video transcoding service with real-time encoding and streaming capabilities. The system should support transcoding into 480p, 720p, 1080p, and 4K resolutions, with all jobs handled asynchronously to ensure a smooth and responsive user experience.",
+      github: "https://github.com/Surajsuthar/video-transcoder",
+      link: null,
+      tech: ["Python", "FastAPI", "Celery", "Redis", "FFmpeg", "Minio"]
+    },
+    {
+        id: 5,
+        title: "Record-me",
+        description: "Developed an open-source screen recording and video messaging platform as an alternative to Loom. Built features for recording, storing, and sharing videos with secure JWT-based authentication, enabling private hosting and full ownership without relying on third-party subscriptions.",
+        link: null,
+        github: "https://github.com/Surajsuthar/record-me",
+        tech: ["Next.js", "MongoDB", "Clerk", "Prisma", "Electron"]
     },
     {
         id: 3,
@@ -27,29 +43,14 @@ const projects = [
         tech: ["Next.js", "OpenAI", "Node.js", "PostgreSQL"]
     },
     {
-        id: 4,
-        title: "Appoint",
-        description: "Appointment booking system with real-time scheduling, smart reminders, and calendar integration.",
+        id: 7,
+        title: "Coding Challenges",
+        description: "Built a collection of low-level system tools and algorithmic implementations including a custom grep tool, JSON parser, web server, Redis-like server, compression tool (Huffman coding), and CLI utilities. Focused on understanding core computer science concepts, building from scratch, and optimizing for performance and clean design.",
+        github: "https://github.com/Surajsuthar/coding-challages",
         link: null,
-        github: "https://github.com/Surajsuthar/appoint",
-        tech: ["React", "Node.js", "MongoDB", "Socket.io"]
-    },
-    {
-        id: 5,
-        title: "Record-me",
-        description: "Platform for users to share insightful content, fostering a community of engaged writers and readers.",
-        link: null,
-        github: "https://github.com/Surajsuthar/record-me",
-        tech: ["React", "Express", "MongoDB", "JWT"]
-    },
-    {
-      id: 5,
-      title: "Video Transcoder",
-      description: "Build a video transcoding service with real-time encoding and streaming capabilities. The system should support transcoding into 480p, 720p, 1080p, and 4K resolutions, with all jobs handled asynchronously to ensure a smooth and responsive user experience.",
-      github: "https://github.com/Surajsuthar/video-transcoder",
-      link: null,
-      tech: ["Python", "FastAPI", "Celery", "Redis", "FFmpeg", "Minio"]
-    },
+        tag: "practice",
+        tech: ["Python", "Systems Design", "Algorithms", "CLI Tools"]
+    }
 ]
 
 export default function Projects() {
