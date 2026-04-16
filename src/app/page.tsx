@@ -2,9 +2,11 @@ import Hero from "@/components/ui/Hero";
 import Footer from "@/components/ui/footer";
 import { TabsSection } from "@/components/ui/TabsSection";
 import { getAllPosts } from "@/lib/blog";
+import { getMergedPRs } from "@/lib/github";
 
-export default function Home() {
+export default async function Home() {
   const posts = getAllPosts();
+  const mergedPRs = await getMergedPRs();
 
   return (
     <main className="min-h-screen flex flex-col">
@@ -13,7 +15,7 @@ export default function Home() {
           <Hero />
         </section>
         <section>
-          <TabsSection posts={posts} />
+          <TabsSection posts={posts} mergedPRs={mergedPRs} />
         </section>
       </div>
       <div className="w-full max-w-[650px] mx-auto px-6">

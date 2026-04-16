@@ -4,7 +4,7 @@ const projects = [
     {
         id: 1,
         title: "Dev Notify",
-        description: "Web application that helps developers stay updated on issues from their starred GitHub repositories.",
+        description: "Build a web application that helps developers stay updated on issues from their starred repositories on GitHub. The platform should aggregate and track issue activity in real time, providing notifications and a centralized dashboard to improve developer productivity and awareness.",
         link: "https://devnotify.in",
         github: "https://github.com/Surajsuthar/dev-notify",
         tech: ["Next.js", "TypeScript", "GitHub API", "Tailwind CSS"]
@@ -41,6 +41,14 @@ const projects = [
         link: null,
         github: "https://github.com/Surajsuthar/record-me",
         tech: ["React", "Express", "MongoDB", "JWT"]
+    },
+    {
+      id: 5,
+      title: "Video Transcoder",
+      description: "Build a video transcoding service with real-time encoding and streaming capabilities. The system should support transcoding into 480p, 720p, 1080p, and 4K resolutions, with all jobs handled asynchronously to ensure a smooth and responsive user experience.",
+      github: "https://github.com/Surajsuthar/video-transcoder",
+      link: null,
+      tech: ["Python", "FastAPI", "Celery", "Redis", "FFmpeg", "Minio"]
     },
 ]
 
