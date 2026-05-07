@@ -20,9 +20,22 @@ export default function Hero() {
 		<div className="flex flex-col gap-4">
 			<h1 className="text-4xl md:text-5xl font-bold">Hey, I'm Suraj</h1>
 			<p className="text-muted-foreground">
-				Builder focused on shipping scalable, production-ready systems. 1.2+
-				years of hands-on experience.
+				Builder focused on shipping scalable, production-ready systems with
+				1.5+ years of hands-on experience. I love working on databases,
+				distributed systems, and the engineering details that keep software
+				reliable.
 			</p>
+			<div className="flex flex-wrap items-center gap-2 text-sm">
+				<span className="text-muted-foreground">Core stack</span>
+				{["TypeScript", "Python", "Go"].map((language) => (
+					<span
+						key={language}
+						className="rounded-md border border-border px-2 py-1 text-xs text-foreground"
+					>
+						{language}
+					</span>
+				))}
+			</div>
 			<div className="flex items-center gap-4">
 				<button
 					onClick={handleCopy}
