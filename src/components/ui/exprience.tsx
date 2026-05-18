@@ -30,15 +30,15 @@ const experiences = [
 
 export function Experience() {
     return (
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-8">
             {experiences.map((exp) => (
                 <div
                     key={exp.id}
-                    className="group p-4 -mx-4 rounded-lg hover:bg-muted/50 transition-all duration-200 hover:translate-x-1"
+                    className="pb-2"
                 >
-                    <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1">
+                    <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
                         <div>
-                            <h3 className="font-semibold">{exp.title}</h3>
+                            <h3 className="text-sm font-medium">{exp.title}</h3>
                             <p className="text-muted-foreground text-sm">
                                 {exp.company} · {exp.type}
                             </p>
@@ -47,19 +47,10 @@ export function Experience() {
                             {exp.period}
                         </span>
                     </div>
-                    <p className="mt-2 text-sm text-muted-foreground">
+                    <p className="mt-3 text-sm leading-6 text-muted-foreground">
                         {exp.description}
                     </p>
-                    <div className="flex flex-wrap gap-2 mt-3">
-                        {exp.tech.map((t) => (
-                            <span
-                                key={t}
-                                className="text-xs px-2 py-1 bg-muted rounded-md"
-                            >
-                                {t}
-                            </span>
-                        ))}
-                    </div>
+                    <p className="mt-3 text-xs leading-6 text-muted-foreground">{exp.tech.join(" / ")}</p>
                 </div>
             ))}
         </div>

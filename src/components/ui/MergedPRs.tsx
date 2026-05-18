@@ -19,20 +19,20 @@ export function MergedPRs({ prs }: { prs: MergedPR[] }) {
 	}
 
 	return (
-		<div className="flex flex-col gap-2">
+		<div className="flex flex-col gap-8">
 			{prs.map((pr) => (
 				<div
 					key={pr.id}
-					className="group p-4 -mx-4 rounded-lg hover:bg-muted/50 transition-all duration-200 hover:translate-x-1"
+					className="pb-2"
 				>
-					<div className="flex items-start justify-between gap-2">
-						<div className="flex items-start gap-2 min-w-0">
-							<GitMerge className="h-4 w-4 mt-0.5 text-purple-500 shrink-0" />
+					<div className="flex items-start justify-between gap-4">
+						<div className="flex min-w-0 items-start gap-3">
+							<GitMerge className="mt-0.5 h-4 w-4 shrink-0 text-muted-foreground" />
 							<div className="min-w-0">
-								<h3 className="font-semibold text-sm leading-snug line-clamp-2">
+								<h3 className="line-clamp-2 text-sm font-medium leading-6">
 									{pr.title}
 								</h3>
-								<p className="text-xs text-muted-foreground mt-0.5">
+								<p className="mt-1 text-xs leading-6 text-muted-foreground">
 									<span className="font-medium text-foreground/70">
 										{pr.repoFullName}
 									</span>
@@ -40,7 +40,7 @@ export function MergedPRs({ prs }: { prs: MergedPR[] }) {
 								</p>
 							</div>
 						</div>
-						<div className="flex items-center gap-2 shrink-0">
+						<div className="flex shrink-0 items-center gap-2">
 							<span className="text-xs text-muted-foreground whitespace-nowrap">
 								{formatDate(pr.merged_at)}
 							</span>
@@ -56,21 +56,9 @@ export function MergedPRs({ prs }: { prs: MergedPR[] }) {
 						</div>
 					</div>
 					{pr.labels.length > 0 && (
-						<div className="flex flex-wrap gap-1.5 mt-2 ml-6">
-							{pr.labels.map((label) => (
-								<span
-									key={label.name}
-									className="text-xs px-2 py-0.5 rounded-full"
-									style={{
-										backgroundColor: `#${label.color}22`,
-										color: `#${label.color}`,
-										border: `1px solid #${label.color}44`,
-									}}
-								>
-									{label.name}
-								</span>
-							))}
-						</div>
+						<p className="ml-7 mt-3 text-xs leading-6 text-muted-foreground">
+							{pr.labels.map((label) => label.name).join(" / ")}
+						</p>
 					)}
 				</div>
 			))}

@@ -108,13 +108,13 @@ function ProjectInfo({
 	return (
 		<div
 			key={id}
-			className="group p-4 -mx-4 rounded-lg hover:bg-muted/50 transition-all duration-200 hover:translate-x-1"
+			className="pb-2"
 		>
-			<div className="flex items-start justify-between gap-2">
+			<div className="flex items-start justify-between gap-4">
 				<div className="flex items-center gap-2">
-					<h3 className="font-semibold">{title}</h3>
+					<h3 className="text-sm font-medium">{title}</h3>
 					{tag && (
-						<span className="text-xs px-2 py-0.5 bg-muted rounded-md text-muted-foreground">
+						<span className="text-xs text-muted-foreground">
 							{tag}
 						</span>
 					)}
@@ -144,23 +144,23 @@ function ProjectInfo({
 					)}
 				</div>
 			</div>
-			<p className="mt-1 text-sm text-muted-foreground">{description}</p>
-			<p className="mt-2 text-xs text-muted-foreground">{tech.join(" / ")}</p>
+			<p className="mt-3 text-sm leading-6 text-muted-foreground">{description}</p>
+			<p className="mt-3 text-xs leading-6 text-muted-foreground">{tech.join(" / ")}</p>
 		</div>
 	);
 }
 
 export default function Projects() {
 	return (
-		<div className="flex flex-col gap-8">
-			<div className="flex flex-col gap-2">
+		<div className="flex flex-col gap-10">
+			<div className="flex flex-col gap-8">
 				{projects.map((project) => (
 					<ProjectInfo key={project.id} {...project} />
 				))}
 			</div>
 
-			<section className="border-t border-border pt-5">
-				<div className="mb-3 flex items-center justify-between gap-3">
+			<section>
+				<div className="mb-5 flex items-center justify-between gap-3">
 					<h2 className="text-sm font-medium text-muted-foreground">
 						Work in Progress
 					</h2>
@@ -168,7 +168,7 @@ export default function Projects() {
 						Currently building
 					</span>
 				</div>
-				<div className="flex flex-col gap-2">
+				<div className="flex flex-col gap-8">
 					{wipProjects.map((project) => (
 						<ProjectInfo key={project.id} {...project} />
 					))}
