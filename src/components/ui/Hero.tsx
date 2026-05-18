@@ -1,6 +1,13 @@
 "use client";
-import { Download, Github, Linkedin, Mail, Twitter } from "lucide-react";
+import Link from "next/link";
 import { toast } from "sonner";
+
+const sectionLinks = [
+	{ href: "/experience", label: "experience" },
+	{ href: "/projects", label: "projects" },
+	{ href: "/open-source", label: "open source" },
+	{ href: "/blog", label: "blog" },
+];
 
 export default function Hero() {
 	const email = "surajsuthar0067@gmail.com";
@@ -17,67 +24,68 @@ export default function Hero() {
 	};
 
 	return (
-		<div className="flex flex-col gap-4">
-			<h1 className="text-4xl md:text-5xl font-bold">Hey, I'm Suraj</h1>
-			<p className="text-muted-foreground">
-				Builder focused on shipping scalable, production-ready systems with
-				1.5+ years of hands-on experience. I love working on databases,
-				distributed systems, and the engineering details that keep software
-				reliable.
-			</p>
-			<div className="flex flex-wrap items-center gap-2 text-sm">
-				<span className="text-muted-foreground">Core stack</span>
-				{["TypeScript", "Python", "Go"].map((language) => (
-					<span
-						key={language}
-						className="rounded-md border border-border px-2 py-1 text-xs text-foreground"
+		<section id="home" className="flex min-h-screen items-center">
+			<div className="flex flex-col gap-5">
+				<div>
+					<h1 className="text-4xl font-semibold tracking-normal md:text-5xl">
+						Suraj
+					</h1>
+					<p className="mt-1 text-sm text-muted-foreground">backend engineer</p>
+				</div>
+				<p className="max-w-xl text-[15px] leading-7 text-foreground">
+					hey, i&apos;m surajmal suthar. i build backend systems, APIs, and
+					full-stack products that are reliable enough to live in production.
+				</p>
+				<p className="max-w-xl text-[15px] leading-7 text-muted-foreground">
+					i like working close to databases, queues, APIs, and the boring
+					details that make software easier to run and maintain. i&apos;m also
+					exploring database internals and trying to understand how storage,
+					indexing, and query execution work under the hood.
+				</p>
+				<p className="max-w-xl text-[15px] leading-7 text-muted-foreground">
+					i usually work with TypeScript, Python, Go, C/C++, and Postgres.
+				</p>
+				<nav
+					aria-label="Home sections"
+					className="flex flex-wrap gap-x-5 gap-y-2 pt-5 text-sm"
+				>
+					{sectionLinks.map((link) => (
+						<Link
+							key={link.href}
+							href={link.href}
+							className="text-foreground underline underline-offset-4 transition-colors hover:text-muted-foreground"
+						>
+							{link.label}
+						</Link>
+					))}
+				</nav>
+				<div className="flex flex-wrap gap-x-5 gap-y-2 pt-3 text-sm">
+					<button
+						onClick={handleCopy}
+						type="button"
+						className="text-muted-foreground underline underline-offset-4 transition-colors hover:text-foreground"
+						aria-label="Copy email"
 					>
-						{language}
-					</span>
-				))}
+						send email
+					</button>
+					<a
+						href="https://github.com/Surajsuthar"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="text-muted-foreground underline underline-offset-4 transition-colors hover:text-foreground"
+					>
+						github
+					</a>
+					<a
+						href="https://x.com/Suraj__0067"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="text-muted-foreground underline underline-offset-4 transition-colors hover:text-foreground"
+					>
+						x/twitter
+					</a>
+				</div>
 			</div>
-			<div className="flex items-center gap-4">
-				<button
-					onClick={handleCopy}
-					type="button"
-					className="hover:text-muted-foreground transition-colors"
-					aria-label="Copy email"
-				>
-					<Mail className="h-5 w-5" />
-				</button>
-				<a
-					href="https://github.com/Surajsuthar"
-					target="_blank"
-					rel="noopener noreferrer"
-					className="hover:text-muted-foreground transition-colors"
-				>
-					<Github className="h-5 w-5" />
-				</a>
-				<a
-					href="https://www.linkedin.com/in/surajmal-suthar-26a297203/"
-					target="_blank"
-					rel="noopener noreferrer"
-					className="hover:text-muted-foreground transition-colors"
-				>
-					<Linkedin className="h-5 w-5" />
-				</a>
-				<a
-					href="https://x.com/Suraj__0067"
-					target="_blank"
-					rel="noopener noreferrer"
-					className="hover:text-muted-foreground transition-colors"
-				>
-					<Twitter className="h-5 w-5" />
-				</a>
-				<a
-					href="https://drive.google.com/file/d/1laF72Ei3AgopH0sXhBZopyevZbN9Ycvi/view?usp=sharing"
-					target="_blank"
-					rel="noopener noreferrer"
-					className="hover:text-muted-foreground transition-colors"
-				>
-					<Download className="h-5 w-5" />
-				</a>
-			</div>
-		</div>
+		</section>
 	);
 }

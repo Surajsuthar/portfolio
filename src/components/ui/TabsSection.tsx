@@ -1,12 +1,12 @@
 "use client";
 
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import type { ReactNode } from "react";
 import type { BlogPost } from "@/lib/blog";
 import type { MergedPR } from "@/lib/github";
 import { BlogList } from "./BlogList";
 import { Experience } from "./exprience";
-import Projects from "./Projects";
 import { MergedPRs } from "./MergedPRs";
+import Projects from "./Projects";
 
 interface TabsSectionProps {
 	posts: BlogPost[];
@@ -15,45 +15,44 @@ interface TabsSectionProps {
 
 export function TabsSection({ posts, mergedPRs }: TabsSectionProps) {
 	return (
-		<Tabs defaultValue="experience" className="w-full">
-			<TabsList className="w-full justify-start bg-transparent rounded-none h-auto p-0 gap-4">
-				<TabsTrigger
-					value="experience"
-					className="rounded-none border-b-2 border-transparent data-[state=active]:border-foreground data-[state=active]:bg-transparent px-0 pb-2"
-				>
-					Experience
-				</TabsTrigger>
-				<TabsTrigger
-					value="projects"
-					className="rounded-none border-b-2 border-transparent data-[state=active]:border-foreground data-[state=active]:bg-transparent px-0 pb-2"
-				>
-					Projects
-				</TabsTrigger>
-				<TabsTrigger
-					value="open-source"
-					className="rounded-none border-b-2 border-transparent data-[state=active]:border-foreground data-[state=active]:bg-transparent px-0 pb-2"
-				>
-					Open Source
-				</TabsTrigger>
-				<TabsTrigger
-					value="blog"
-					className="rounded-none border-b-2 border-transparent data-[state=active]:border-foreground data-[state=active]:bg-transparent px-0 pb-2"
-				>
-					Blog
-				</TabsTrigger>
-			</TabsList>
-			<TabsContent value="experience" className="mt-6">
+		<div className="flex w-full flex-col gap-12">
+			<Section id="experience" title="Experience" eyebrow="Work">
 				<Experience />
-			</TabsContent>
-			<TabsContent value="projects" className="mt-6">
+			</Section>
+			<Section id="projects" title="Projects" eyebrow="Selected builds">
 				<Projects />
-			</TabsContent>
-			<TabsContent value="open-source" className="mt-6">
+			</Section>
+			<Section id="open-source" title="Open Source" eyebrow="Merged work">
 				<MergedPRs prs={mergedPRs} />
-			</TabsContent>
-			<TabsContent value="blog" className="mt-6">
+			</Section>
+			<Section id="blog" title="Blog" eyebrow="Writing">
 				<BlogList posts={posts} />
-			</TabsContent>
-		</Tabs>
+			</Section>
+		</div>
+	);
+}
+
+function Section({
+	id,
+	title,
+	eyebrow,
+	children,
+}: {
+	id: string;
+	title: string;
+	eyebrow: string;
+	children: ReactNode;
+}) {
+	return (
+		<section
+			id={id}
+			className="scroll-mt-8 border-t border-border pt-7"
+		>
+			<div className="mb-4">
+				<p className="sr-only">{eyebrow}</p>
+				<h2 className="text-base font-semibold lowercase">{title}</h2>
+			</div>
+			{children}
+		</section>
 	);
 }
