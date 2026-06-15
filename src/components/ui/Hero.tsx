@@ -7,6 +7,7 @@ const sectionLinks = [
 	{ href: "/projects", label: "projects" },
 	{ href: "/open-source", label: "open source" },
 	{ href: "/blog", label: "blog" },
+	{ href: "/paper", label: "research paper" },
 ];
 
 export default function Hero() {
@@ -28,22 +29,25 @@ export default function Hero() {
 			<div className="flex flex-col gap-5">
 				<div>
 					<h1 className="text-4xl font-semibold tracking-normal md:text-5xl">
-						Suraj
+						Hey!👋
 					</h1>
-					<p className="mt-1 text-sm text-muted-foreground">backend engineer</p>
+					<p className="mt-1 text-sm text-muted-foreground">Backend engineer</p>
 				</div>
 				<p className="max-w-xl text-[15px] leading-7 text-foreground">
-					hey, i&apos;m surajmal suthar. i build backend systems, APIs, and
-					full-stack products that are reliable enough to live in production.
+					hey, I&apos;m Suraj Suthar. i build backend systems, APIs, and
+					products that are reliable enough to live in production.
 				</p>
 				<p className="max-w-xl text-[15px] leading-7 text-muted-foreground">
-					i like working close to databases, queues, APIs, and the boring
-					details that make software easier to run and maintain. i&apos;m also
-					exploring database internals and trying to understand how storage,
-					indexing, and query execution work under the hood.
+					I&apos;m also exploring database internals and trying to understand
+					how storage, indexing, and query execution work under the hood. i like
+					working close to databases, queues, APIs, and the boring details that
+					make software easier to run and maintain.
 				</p>
 				<p className="max-w-xl text-[15px] leading-7 text-muted-foreground">
 					i usually work with TypeScript, Python, Go, C/C++, and Postgres.
+				</p>
+				<p className="max-w-xl text-[15px] leading-7">
+					Hire me! I am Looking for a Database/Backend Engineer Position.
 				</p>
 				<nav
 					aria-label="Home sections"
