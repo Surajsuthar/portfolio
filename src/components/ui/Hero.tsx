@@ -31,20 +31,19 @@ export default function Hero() {
 					<h1 className="text-4xl font-semibold tracking-normal md:text-5xl">
 						Hey!👋
 					</h1>
-					<p className="mt-1 text-sm text-muted-foreground">Backend engineer</p>
 				</div>
 				<p className="max-w-xl text-[15px] leading-7 text-foreground">
-					hey, I&apos;m Suraj Suthar. i build backend systems, APIs, and
+					hey, I&apos;m <b>Suraj Suthar</b>. i build backend systems, APIs, and
 					products that are reliable enough to live in production.
 				</p>
 				<p className="max-w-xl text-[15px] leading-7 text-muted-foreground">
 					I&apos;m also exploring database internals and trying to understand
 					how storage, indexing, and query execution work under the hood. i like
-					working close to databases, queues, APIs, and the boring details that
+					working close to databases, and the boring details that
 					make software easier to run and maintain.
 				</p>
 				<p className="max-w-xl text-[15px] leading-7 text-muted-foreground">
-					i usually work with TypeScript, Python, Go, C/C++, and Postgres.
+					i usually work with TypeScript, Python, Go, C++, and Postgres.
 				</p>
 				<p className="max-w-xl text-[15px] leading-7">
 					Hire me! I am Looking for a Database/Backend Engineer Position.

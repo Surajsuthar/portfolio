@@ -13,16 +13,16 @@ const projects = [
 	},
 	{
 		id: 2,
-		title: "Passion Farms",
+		title: "Evict-Bench",
 		description:
-			"Built a scalable full-stack e-commerce platform with real-time inventory tracking and secure payment integration using Stripe. Designed and implemented REST APIs, optimized database queries for product and order management, and delivered a responsive, high-performance user experience using Next.js.",
-		link: "https://beta.passionfarms.org",
-		github: null,
-		tag: "freelance",
-		tech: ["Next.js", "Node.js", "MongoDB", "Stripe"],
+			"C++ benchmark suite for database buffer-pool eviction policies: FIFO, Random, LRU, MRU, CLOCK, LFU, LFU-Aging, LRU-K, 2Q, PostgreSQL-style Clock Sweep, InnoDB midpoint LRU, ARC, LIRS, CLOCK-Pro, CAR, TinyLFU, and DBMIN-style query-aware replacement.",
+		link: "https://github.com/Surajsuthar/Evict-Bench",
+		tag: "Database",
+		github: "https://github.com/Surajsuthar/Evict-Bench",
+		tech: ['c++', 'benchmark', 'database'],
 	},
 	{
-		id: 5,
+		id: 4,
 		title: "Video Transcoder",
 		description:
 			"Build a video transcoding service with real-time encoding and streaming capabilities. The system should support transcoding into 480p, 720p, 1080p, and 4K resolutions, with all jobs handled asynchronously to ensure a smooth and responsive user experience.",
@@ -32,7 +32,7 @@ const projects = [
 		tech: ["Python", "FastAPI", "Celery", "Redis", "FFmpeg", "Minio"],
 	},
 	{
-		id: 6,
+		id: 5,
 		title: "Record-me",
 		description:
 			"Developed an open-source screen recording and video messaging platform as an alternative to Loom. Built features for recording, storing, and sharing videos with secure JWT-based authentication, enabling private hosting and full ownership without relying on third-party subscriptions.",
@@ -42,7 +42,7 @@ const projects = [
 		tech: ["Next.js", "MongoDB", "Clerk", "Prisma", "Electron"],
 	},
 	{
-		id: 7,
+		id: 6,
 		title: "Coding Challenges",
 		description:
 			"Built a collection of low-level system tools and algorithmic implementations including a custom grep tool, JSON parser, web server, Redis-like server, compression tool (Huffman coding), and CLI utilities. Focused on understanding core computer science concepts, building from scratch, and optimizing for performance and clean design.",
@@ -51,6 +51,16 @@ const projects = [
 		tag: "practice",
 		tech: ["Python", "Systems Design", "Algorithms", "CLI Tools"],
 	},
+	{
+		id: 3,
+		title: "Passion Farms",
+		description:
+			"Built a scalable full-stack e-commerce platform with real-time inventory tracking and secure payment integration using Stripe. Designed and implemented REST APIs, optimized database queries for product and order management, and delivered a responsive, high-performance user experience using Next.js.",
+		link: "https://beta.passionfarms.org",
+		github: null,
+		tag: "freelance",
+		tech: ["Next.js", "Node.js", "MongoDB", "Stripe"],
+	},
 ];
 
 const wipProjects = [
@@ -58,7 +68,7 @@ const wipProjects = [
 		id: 1,
 		title: "noCap",
 		description:
-			"Building an AI-assisted note and idea capture app focused on fast writing, clean organization, and lightweight collaboration workflows.",
+			"NoCap is a live random video call platform. Meet real strangers from around the world — no scripts, no filters, just authentic face-to-face conversations.",
 		link: "https://no-cap-gray.vercel.app/",
 		github: null,
 		tag: "WIP",
@@ -68,7 +78,7 @@ const wipProjects = [
 		id: 2,
 		title: "Vidara",
 		description:
-			"Developing a video-focused product for uploading, processing, and sharing media with a smoother creator workflow and reliable backend jobs.",
+			"AI Images and short video generation for social media",
 		link: null,
 		github: "https://github.com/Surajsuthar/vidara",
 		tag: "WIP",
