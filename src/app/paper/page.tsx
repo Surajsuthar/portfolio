@@ -24,6 +24,7 @@ const papers = [
 	{
 		title: "The Ubiquitous B-Tree ",
 		href: "https://carlosproal.com/ir/papers/p121-comer.pdf",
+			status: "done",
 	}
 ];
 
@@ -43,7 +44,7 @@ export default function PaperPage() {
 						</a>
 						<div className="mt-2 flex flex-wrap gap-x-3 gap-y-1 text-sm text-muted-foreground">
 							<span>{paper.status}</span>
-							{paper.note ? <span>{paper.note}</span> : null}
+
 						</div>
 					</li>
 				))}
