@@ -6,7 +6,6 @@ const papers = [
 			"Evolution of Buffer Management in Database Systems: From Classical Algorithms to Machine Learning and Disaggregated Memory",
 		href: "https://arxiv.org/pdf/2512.22995",
 		status: "done",
-		note: "Read only the last part.",
 	},
 	{
 		title: "Principles of Database Buffer Management",
@@ -16,14 +15,16 @@ const papers = [
 	{
 		title: "Architecture of a Database System",
 		href: "https://dsf.berkeley.edu/papers/fntdb07-architecture.pdf",
-		status: "ongoing",
 	},
 	{
 		title:
 			"A Mechanism for Managing the Buffer Pool in a Relational Database System Using the Hot Set Model",
 		href: "https://www.vldb.org/conf/1982/P257.PDF",
-		status: "to read",
 	},
+	{
+		title: "The Ubiquitous B-Tree ",
+		href: "https://carlosproal.com/ir/papers/p121-comer.pdf",
+	}
 ];
 
 export default function PaperPage() {
