@@ -38,14 +38,14 @@ export default function Hero() {
 				</p>
 				<p className="max-w-xl text-[15px] leading-7 text-muted-foreground">
 					I&apos;m also exploring database internals and trying to understand
-					how storage, indexing, and query execution work under the hood. i like
+					how storage, indexing, and query execution work under the hood with @cmudb. i like
 					working close to databases, and the boring details that
 					make software easier to run and maintain.
 				</p>
 				<p className="max-w-xl text-[15px] leading-7 text-muted-foreground">
-					i usually work with TypeScript, Python, Go, C++, and Postgres.
+					i usually work with TypeScript, Python, Rust, C++, and Postgres.
 				</p>
-				<p className="max-w-xl text-[15px] leading-7">
+				<p className="max-w-xl text-[15px] font-bold leading-7">
 					Hire me! I am Looking for a Database/Backend Engineer Position.
 				</p>
 				<nav

@@ -22,7 +22,27 @@ const projects = [
 		tech: ['c++', 'benchmark', 'database'],
 	},
 	{
+		id: 3,
+		title: "Storage Engine Components",
+		description:
+			"Built slotted pages, B-Tree, in-memory data structures (Skip List, Incremental Hash Table, Radix Tree), LSM Tree with MemTable, and performance benchmarks in Rust. ",
+		link: null,
+		github: "https://github.com/Surajsuthar/database-component-",
+		tag: null,
+		tech: ["Rust", "B-Tree", "LSM Tree", "MemTable", "Skip List", "Radix Tree"],
+	},
+	{
 		id: 4,
+		title: "rsearch",
+		description:
+			"Local full-text search over a directory tree. Point it at a folder, it builds a BM25-ranked inverted index, and drops you into a vim-style TUI to search it.",
+		link: null,
+		github: "https://github.com/Surajsuthar/rsearch",
+		tag: null,
+		tech: ["Rust", "BM25", "Inverted Index", "TUI"],
+	},
+	{
+		id: 5,
 		title: "Video Transcoder",
 		description:
 			"Build a video transcoding service with real-time encoding and streaming capabilities. The system should support transcoding into 480p, 720p, 1080p, and 4K resolutions, with all jobs handled asynchronously to ensure a smooth and responsive user experience.",
@@ -32,7 +52,7 @@ const projects = [
 		tech: ["Python", "FastAPI", "Celery", "Redis", "FFmpeg", "Minio"],
 	},
 	{
-		id: 5,
+		id: 6,
 		title: "Record-me",
 		description:
 			"Developed an open-source screen recording and video messaging platform as an alternative to Loom. Built features for recording, storing, and sharing videos with secure JWT-based authentication, enabling private hosting and full ownership without relying on third-party subscriptions.",
@@ -42,7 +62,7 @@ const projects = [
 		tech: ["Next.js", "MongoDB", "Clerk", "Prisma", "Electron"],
 	},
 	{
-		id: 6,
+		id: 7,
 		title: "Coding Challenges",
 		description:
 			"Built a collection of low-level system tools and algorithmic implementations including a custom grep tool, JSON parser, web server, Redis-like server, compression tool (Huffman coding), and CLI utilities. Focused on understanding core computer science concepts, building from scratch, and optimizing for performance and clean design.",
@@ -52,7 +72,7 @@ const projects = [
 		tech: ["Python", "Systems Design", "Algorithms", "CLI Tools"],
 	},
 	{
-		id: 3,
+		id: 8,
 		title: "Passion Farms",
 		description:
 			"Built a scalable full-stack e-commerce platform with real-time inventory tracking and secure payment integration using Stripe. Designed and implemented REST APIs, optimized database queries for product and order management, and delivered a responsive, high-performance user experience using Next.js.",
