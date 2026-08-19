@@ -1,0 +1,107 @@
+0 verbose cli /Users/suraj/.nvm/versions/node/v24.14.0/bin/node /Users/suraj/.nvm/versions/node/v24.14.0/bin/npm
+1 info using npm@11.9.0
+2 info using node@v24.14.0
+3 silly config load:file:/Users/suraj/.nvm/versions/node/v24.14.0/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/suraj/Desktop/Project/persnol/portfolio/.npmrc
+5 silly config load:file:/Users/suraj/.npmrc
+6 silly config load:file:/Users/suraj/.nvm/versions/node/v24.14.0/etc/npmrc
+7 verbose title npm install next@latest eslint-config-next@latest
+8 verbose argv "install" "next@latest" "eslint-config-next@latest" "--cache" "./.npm-cache"
+9 verbose logfile logs-max:10 dir:/Users/suraj/Desktop/Project/persnol/portfolio/.npm-cache/_logs/2026-08-19T03_06_30_152Z-
+10 verbose logfile /Users/suraj/Desktop/Project/persnol/portfolio/.npm-cache/_logs/2026-08-19T03_06_30_152Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:2348810240 maxSize:587202560 maxEntrySize:293601280
+13 silly packumentCache corgi:https://registry.npmjs.org/next cache-miss
+14 silly packumentCache corgi:https://registry.npmjs.org/eslint-config-next cache-miss
+15 http fetch GET 200 https://registry.npmjs.org/npm 410ms
+16 http fetch GET 200 https://registry.npmjs.org/eslint-config-next 540ms (cache miss)
+17 silly packumentCache corgi:https://registry.npmjs.org/eslint-config-next set size:undefined disposed:false
+18 http fetch GET 200 https://registry.npmjs.org/next 682ms (cache miss)
+19 silly packumentCache corgi:https://registry.npmjs.org/next set size:undefined disposed:false
+20 silly idealTree buildDeps
+21 silly fetch manifest next@16.3.1
+22 silly packumentCache full:https://registry.npmjs.org/next cache-miss
+23 http fetch GET 200 https://registry.npmjs.org/next 464ms (cache miss)
+24 silly packumentCache full:https://registry.npmjs.org/next set size:undefined disposed:false
+25 silly fetch manifest @opentelemetry/api@^1.1.0
+26 silly packumentCache full:https://registry.npmjs.org/@opentelemetry%2fapi cache-miss
+27 http fetch GET 200 https://registry.npmjs.org/@opentelemetry%2fapi 95ms (cache miss)
+28 silly packumentCache full:https://registry.npmjs.org/@opentelemetry%2fapi set size:undefined disposed:false
+29 silly fetch manifest @playwright/test@^1.51.1
+30 silly packumentCache full:https://registry.npmjs.org/@playwright%2ftest cache-miss
+31 http fetch GET 200 https://registry.npmjs.org/@playwright%2ftest 299ms (cache miss)
+32 silly packumentCache full:https://registry.npmjs.org/@playwright%2ftest set size:undefined disposed:false
+33 silly fetch manifest babel-plugin-react-compiler@*
+34 silly packumentCache full:https://registry.npmjs.org/babel-plugin-react-compiler cache-miss
+35 http fetch GET 200 https://registry.npmjs.org/babel-plugin-react-compiler 87ms (cache miss)
+36 silly packumentCache full:https://registry.npmjs.org/babel-plugin-react-compiler set size:undefined disposed:false
+37 silly fetch manifest react@^18
+38 silly packumentCache full:https://registry.npmjs.org/react cache-miss
+39 http fetch GET 200 https://registry.npmjs.org/react 211ms (cache miss)
+40 silly packumentCache full:https://registry.npmjs.org/react set size:undefined disposed:false
+41 silly fetch manifest react-dom@^18
+42 silly packumentCache full:https://registry.npmjs.org/react-dom cache-miss
+43 http fetch GET 200 https://registry.npmjs.org/react-dom 223ms (cache miss)
+44 silly packumentCache full:https://registry.npmjs.org/react-dom set size:undefined disposed:false
+45 silly fetch manifest sass@^1.3.0
+46 silly packumentCache full:https://registry.npmjs.org/sass cache-miss
+47 http fetch GET 200 https://registry.npmjs.org/sass 100ms (cache miss)
+48 silly packumentCache full:https://registry.npmjs.org/sass set size:undefined disposed:false
+49 silly fetch manifest eslint-config-next@16.3.1
+50 silly packumentCache full:https://registry.npmjs.org/eslint-config-next cache-miss
+51 http fetch GET 200 https://registry.npmjs.org/eslint-config-next 198ms (cache miss)
+52 silly packumentCache full:https://registry.npmjs.org/eslint-config-next set size:undefined disposed:false
+53 silly fetch manifest eslint@^8
+54 silly packumentCache full:https://registry.npmjs.org/eslint cache-miss
+55 http fetch GET 200 https://registry.npmjs.org/eslint 98ms (cache miss)
+56 silly packumentCache full:https://registry.npmjs.org/eslint set size:undefined disposed:false
+57 silly fetch manifest eslint@>=9.0.0
+58 silly packumentCache full:https://registry.npmjs.org/eslint cache-miss
+59 http cache https://registry.npmjs.org/eslint 7ms (cache hit)
+60 silly packumentCache full:https://registry.npmjs.org/eslint set size:2048190 disposed:false
+61 verbose stack Error: unable to resolve dependency tree
+61 verbose stack     at #failPeerConflict (/Users/suraj/.nvm/versions/node/v24.14.0/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:1402:25)
+61 verbose stack     at #loadPeerSet (/Users/suraj/.nvm/versions/node/v24.14.0/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:1368:33)
+61 verbose stack     at async #buildDepStep (/Users/suraj/.nvm/versions/node/v24.14.0/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:916:11)
+61 verbose stack     at async Arborist.buildIdealTree (/Users/suraj/.nvm/versions/node/v24.14.0/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:170:7)
+61 verbose stack     at async Promise.all (index 1)
+61 verbose stack     at async Arborist.reify (/Users/suraj/.nvm/versions/node/v24.14.0/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:110:5)
+61 verbose stack     at async Install.exec (/Users/suraj/.nvm/versions/node/v24.14.0/lib/node_modules/npm/lib/commands/install.js:151:5)
+61 verbose stack     at async Npm.exec (/Users/suraj/.nvm/versions/node/v24.14.0/lib/node_modules/npm/lib/npm.js:208:9)
+61 verbose stack     at async module.exports (/Users/suraj/.nvm/versions/node/v24.14.0/lib/node_modules/npm/lib/cli/entry.js:67:5)
+62 error code ERESOLVE
+63 error ERESOLVE unable to resolve dependency tree
+64 error
+65 error While resolving: portfolio@0.1.0
+65 error Found: eslint@8.57.1[2m[22m
+65 error [2mnode_modules/eslint[22m
+65 error   [34mdev[39m eslint@"^8" from the root project
+65 error
+65 error Could not resolve dependency:
+65 error [95mpeer[39m eslint@">=9.0.0" from eslint-config-next@16.3.1[2m[22m
+65 error [2mnode_modules/eslint-config-next[22m
+65 error   [34mdev[39m eslint-config-next@"16.3.1" from the root project
+65 error
+65 error Fix the upstream dependency conflict, or retry
+65 error this command with --force or --legacy-peer-deps
+65 error to accept an incorrect (and potentially broken) dependency resolution.
+66 error
+66 error
+66 error For a full report see:
+66 error /Users/suraj/Desktop/Project/persnol/portfolio/.npm-cache/_logs/2026-08-19T03_06_30_152Z-eresolve-report.txt
+67 silly unfinished npm timer reify 1787108790463
+68 silly unfinished npm timer reify:loadTrees 1787108790464
+69 silly unfinished npm timer idealTree:buildDeps 1787108791378
+70 silly unfinished npm timer idealTree:#root 1787108791379
+71 verbose cwd /Users/suraj/Desktop/Project/persnol/portfolio
+72 verbose os Darwin 25.5.0
+73 verbose node v24.14.0
+74 verbose npm  v11.9.0
+75 notice
+75 notice New [33mminor[39m version of npm available! [33m11.9.0[39m -> [34m11.19.0[39m
+75 notice Changelog: [34mhttps://github.com/npm/cli/releases/tag/v11.19.0[39m
+75 notice To update run: [4mnpm install -g npm@11.19.0[24m
+75 notice  { force: true, Symbol(proc-log.meta): true }
+76 verbose exit 1
+77 verbose code 1
+78 error A complete log of this run can be found in: /Users/suraj/Desktop/Project/persnol/portfolio/.npm-cache/_logs/2026-08-19T03_06_30_152Z-debug-0.log
