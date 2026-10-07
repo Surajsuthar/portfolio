@@ -5,7 +5,7 @@ const experiences = [
         company: "Roboto Studio",
         type: "Remote (London)",
         period: "September 2025 - Present",
-        description: "I worked extensively with Sanity CMS to develop a programmatic headless CMS. My role involved designing content models, creating custom schemas, writing GROQ queries, and building backend integrations that powered dynamic and scalable applications. Focused on performance, clean architecture, and developer-friendly CMS workflows.",
+        description: "I worked extensively with Sanity CMS to develop a programmatic headless CMS. My role involved designing content models, creating custom schemas, writing GROQ queries, and building backend integrations that powered dynamic and scalable applications. Focused on performance, clean architecture, and developer-friendly CMS workflows. Developed and integrated a headless CMS solution using Next.js and Sanity CMS, designing flexible content models and custom schemas for dynamic content delivery without redeployments. Built seamless backend integrations between Next.js and Sanity, enabling real-time content updates across 3+ production applications. Optimized GROQ queries and content-access patterns, reducing content-fetch latency by approximately 35% and improving page-load performance. Contributed and maintained a scalable Next.js + Sanity template (150+ GitHub stars) by building reusable backend workflows and integration, content models, and integration patterns that accelerated project onboarding.",
         tech: ["Next.js", "Sanity", "CMS", "REST APIs", "PostgreSQL", "VERCEL"]
     },
     {
@@ -23,7 +23,7 @@ const experiences = [
         company: "Techno Softwares Jaipur",
         type: "on-site",
         period: "Oct 2024 - May 2025",
-        description: "Designed and maintained RESTful APIs for scalable web applications. Worked with MongoDB and SQL databases for efficient data management. Integrated third-party APIs to expand application capabilities.",
+        description: "Designed and maintained RESTful APIs for scalable web applications. Worked with MongoDB and SQL databases for efficient data management. Integrated third-party APIs to expand application capabilities. Developed and maintained scalable RESTful APIs using Node.js and Express with Typescipt, powering high-traffic client applications with 99.9% uptime. Authored comprehensive REST API documentation with Swagger and Postman, enabling seamless integration for frontend teams and reducing onboarding time.Designed database schemas and optimized queries in MySQL, implementing indexing strategies and Redis caching that improved data retrieval performance by up to 30%. Third-party booking APIs integration, managing end-to-end communication, request/response mapping, provider- specific data formats, and complete booking workflows.",
         tech: ["Node.js", "MongoDB", "MYSQL", "REST APIs", "Sequelize ORM"]
     }
 ]
