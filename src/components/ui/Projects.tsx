@@ -53,6 +53,16 @@ const projects = [
 	},
 	{
 		id: 6,
+		title: "refDb",
+		description:
+			"RefDB is an educational distributed sql database project focused on building a small but sophisticated storage engine around a classic Log-Structured Merge Tree (LSM) index. with queey enine and raft consensus algorithm.",
+		github: "https://github.com/Surajsuthar/refDb",
+		tag: null,
+		link: null,
+		tech: ["Rust", "SQL"],
+	},
+	{
+		id: 7,
 		title: "Record-me",
 		description:
 			"Developed an open-source screen recording and video messaging platform as an alternative to Loom. Built features for recording, storing, and sharing videos with secure JWT-based authentication, enabling private hosting and full ownership without relying on third-party subscriptions.",
@@ -62,7 +72,7 @@ const projects = [
 		tech: ["Next.js", "MongoDB", "Clerk", "Prisma", "Electron"],
 	},
 	{
-		id: 7,
+		id: 8,
 		title: "Coding Challenges",
 		description:
 			"Built a collection of low-level system tools and algorithmic implementations including a custom grep tool, JSON parser, web server, Redis-like server, compression tool (Huffman coding), and CLI utilities. Focused on understanding core computer science concepts, building from scratch, and optimizing for performance and clean design.",
@@ -72,7 +82,7 @@ const projects = [
 		tech: ["Python", "Systems Design", "Algorithms", "CLI Tools"],
 	},
 	{
-		id: 8,
+		id: 9,
 		title: "Passion Farms",
 		description:
 			"Built a scalable full-stack e-commerce platform with real-time inventory tracking and secure payment integration using Stripe. Designed and implemented REST APIs, optimized database queries for product and order management, and delivered a responsive, high-performance user experience using Next.js.",
@@ -81,39 +91,15 @@ const projects = [
 		tag: "freelance",
 		tech: ["Next.js", "Node.js", "MongoDB", "Stripe"],
 	},
-];
-
-const wipProjects = [
 	{
-		id: 1,
-		title: "noCap",
-		description:
-			"NoCap is a live random video call platform. Meet real strangers from around the world — no scripts, no filters, just authentic face-to-face conversations.",
-		link: "https://no-cap-gray.vercel.app/",
-		github: null,
-		tag: "WIP",
-		tech: ["Next.js", "TypeScript", "AI SDK", "Tailwind CSS"],
-	},
-	{
-		id: 2,
+		id: 11,
 		title: "Vidara",
-		description:
-			"AI Images and short video generation for social media",
+		description: "Multi model AI Images and video generation for social media marking, reels short video form",
 		link: null,
 		github: "https://github.com/Surajsuthar/vidara",
 		tag: "WIP",
 		tech: ["Next.js", "Python", "FastAPI", "FFmpeg"],
-	},
-	{
-		id: 3,
-		title: "envalut",
-		description:
-			"Building a CLI secret manager for storing, organizing, and retrieving environment secrets from the terminal with a simple developer workflow.",
-		link: null,
-		github: null,
-		tag: "WIP",
-		tech: ["Go", "CLI", "Encryption", "Developer Tools"],
-	},
+	}
 ];
 
 interface Prop {
@@ -188,22 +174,6 @@ export default function Projects() {
 					<ProjectInfo key={project.id} {...project} />
 				))}
 			</div>
-
-			<section>
-				<div className="mb-5 flex items-center justify-between gap-3">
-					<h2 className="text-sm font-medium text-muted-foreground">
-						Work in Progress
-					</h2>
-					<span className="text-xs text-muted-foreground">
-						Currently building
-					</span>
-				</div>
-				<div className="flex flex-col gap-8">
-					{wipProjects.map((project) => (
-						<ProjectInfo key={project.id} {...project} />
-					))}
-				</div>
-			</section>
 		</div>
 	);
 }

@@ -8,7 +8,7 @@ import { getAllPosts, getPostBySlug } from "@/lib/blog";
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://itssuraj.dev";
 
 type Props = {
-	params: { slug: string[] };
+  params: Promise<{ slug: string[] }>;
 };
 
 export async function generateStaticParams() {
@@ -19,7 +19,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-	const slug = params.slug.join("/");
+  const { slug: slugParts } = await params;
+  const slug = slugParts.join("/");
 	const post = getPostBySlug(slug);
 
 	if (!post) return {};
@@ -51,8 +52,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 	};
 }
 
-export default function BlogPostPage({ params }: Props) {
-	const slug = params.slug.join("/");
+export default async function BlogPostPage({ params }: Props) {
+  const { slug: slugParts } = await params;
+  const slug = slugParts.join("/");
 	const post = getPostBySlug(slug);
 
 	if (!post) notFound();
