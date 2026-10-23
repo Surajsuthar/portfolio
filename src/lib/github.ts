@@ -55,7 +55,7 @@ export async function getMergedPRs(): Promise<MergedPR[]> {
 		headers["Authorization"] = `Bearer ${process.env.GITHUB_TOKEN}`;
 	}
 
-	const url = `https://api.github.com/search/issues?q=author:${GITHUB_USERNAME}+type:pr+is:merged&per_page=30&sort=updated&order=desc`;
+const url = `https://api.github.com/search/issues?q=author:${GITHUB_USERNAME}+type:pr+-is:merged&per_page=30&sort=updated&order=desc`;
 
 	const res = await fetch(url, {
 		headers,
